@@ -22,10 +22,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/skully.css" rel="stylesheet">
-    
     <!-- FONT AWESOME -->
     <link href="css/font-awesome.css" rel="stylesheet">
-    
     <style>
         div.section {
             margin-bottom: 80px;
@@ -36,7 +34,17 @@
 <body>
     <!-- Insert your HTML here -->
     <nav class="side-nav">
-        <h1>Acme Sites</h1>
+        <h1>Skully</h1>
+        <ul class="nav-list">
+            <li class="nav-list-section">Documentation</li>
+            <li class="nav-list-item"><a href="#typo">Grid System</a></li>
+            <li class="nav-list-item"><a href="#buttons">Container</a></li>
+            <li class="nav-list-item"><a href="#typo">Typography</a></li>
+            <li class="nav-list-item"><a href="#forms">Forms</a></li>
+            <li class="nav-list-item"><a href="#buttons">Buttons</a></li>
+            <li class="nav-list-item"><a href="#buttons">Table</a></li>
+            <li class="nav-list-item"><a href="#buttons">Misc</a></li>
+        </ul>
         <ul class="nav-list">
             <li class="nav-list-section">channels <span class="secondary-text">(3)</span></li>
             <li class="nav-list-item"><a href="#">api</a></li>
@@ -53,8 +61,8 @@
             <h1>Skully</h1>
             <p>This library was inspired on Slack UI , for a better experience is recommended to use <strong>Lato</strong> as default font-family.</p>
             <!-- TYOGRAFY -->
-            <div class="section">
-                <h2>Typografy</h2>
+            <div id="typo" class="section">
+                <h2>Typography</h2>
                 <div>
                     <h1>Heading H1</h1>
                     <h2>Heading H2</h2>
@@ -66,10 +74,34 @@
                         <p>This is regular text and <strong>this is strong</strong> <span class="secondary-text">, but this is secondary text.</span></p>
                     </div>
                     <div><a href="#">This is a link</a></div>
+                    <!-- NOTIFICATIONS-->
+                    <div class="notification">
+                        <div class="notification-icon"> <span class="fa fa-user fa-lg notification-icon"></span> </div>
+                        <div class="content"> <p> This is a notification, as you can see it's very easy to use ,if you want to show a lot of information in here, and you can add action buttons just right here</p><br>
+                        <a class="btn btn-success btn-small">Notification Action</a>
+                            <a class="btn btn-danger btn-small">Another Action</a>
+                        </div>
+                    </div>
+                    <div class="notification notification-primary">
+                        <div class="notification-icon"> <span class="fa fa-thumbs-o-up fa-lg notification-icon"></span> </div>
+                        <div class="content"> <p> A primary notification</p></div>
+                    </div>
+                    <div class="notification notification-success">
+                        <div class="notification-icon"> <span class="fa fa-upload fa-lg notification-icon"></span> </div>
+                        <div class="content"> <p> And this is a success notification</p></div>
+                    </div>
+                    <div class="notification notification-warning">
+                        <div class="notification-icon"> <span class="fa fa-unlock fa-lg notification-icon"></span> </div>
+                        <div class="content"> <p>This one is a warning notification</p></div>
+                    </div>
+                    <div class="notification notification-danger">
+                        <div class="notification-icon"> <span class="fa fa-trash fa-lg notification-icon"></span> </div>
+                        <div class="content"> <p> And we have danger notification to alert user about dangerous actions</p></div>
+                    </div>
                 </div>
             </div>
             <!-- FORMS -->
-            <div class="section">
+            <div id="forms" class="section">
                 <h2>Forms</h2>
                 <p>Here you can find simple example of how a form should be created using Skully</p>
                 <div>
@@ -120,27 +152,37 @@
                 </div>
             </div>
             <!-- BUTTONS -->
-            <div class="section">
+            <div id="buttons" class="section">
                 <h2>Buttons</h2>
                 <p>By default Skully applies style to buttons and input buttons , however you can use it with other controls like <strong>a</strong> to make a button lik. Here you can find a basic usage of buttons styles.</p>
                 <div>
-                    <input type="button" value="simple button"><br>
-                    <input class="btn-outline" type="button" value="outlined button"><br>
-                    <input class="btn-primary" type="button" value="primary button"><br>
-                    <input class="btn-success" type="button" value="success button"><br>
-                    <input class="btn-warning" type="button" value="warning button"><br>
-                    <input class="btn-danger" type="button" value="danger button"><br>
-                    <input class="btn-small btn-danger" type="button" value="small danger button"><br>
-                    <input class="btn-medium btn-outline" type="button" value="medium outline button"><br>
-                    <input class="btn-large btn-success" type="button" value="large success button"><br>
-                    <input class="btn-xtra-large btn-warning" type="button" value="xtra large warning button"><br>
-                    
-                    <p>Also you can use buttons with <a href="http://fontawesome.io/">Font Awesome</a>. See examples listed below.</p>
-                    
-                    <a href="#" class="btn"><i class="fa fa-camera-retro"></i> It's a camera button</a><br><br>
-                    <a href="#" class="btn btn-xtra-large btn-danger"><i class="fa fa-trash-o"></i> delete account</a><br><br>
-                    <a href="#" class="btn btn-small btn-primary"><i class="fa fa-twitter"></i> Whoat! Twitter Button</a><br><br>
-                </div>
+                    <input type="button" value="simple button">
+                    <br>
+                    <input class="btn-outline" type="button" value="outlined button">
+                    <br>
+                    <input class="btn-primary" type="button" value="primary button">
+                    <br>
+                    <input class="btn-success" type="button" value="success button">
+                    <br>
+                    <input class="btn-warning" type="button" value="warning button">
+                    <br>
+                    <input class="btn-danger" type="button" value="danger button">
+                    <br>
+                    <input class="btn-small btn-danger" type="button" value="small danger button">
+                    <br>
+                    <input class="btn-medium btn-outline" type="button" value="medium outline button">
+                    <br>
+                    <input class="btn-large btn-success" type="button" value="large success button">
+                    <br>
+                    <input class="btn-xtra-large btn-warning" type="button" value="xtra large warning button">
+                    <br>
+                    <p>Also you can use buttons with <a href="http://fontawesome.io/">Font Awesome</a>. See examples listed below.</p> <a href="#" class="btn"><i class="fa fa-camera-retro"></i> It's a camera button</a>
+                    <br>
+                    <br> <a href="#" class="btn btn-xtra-large btn-danger"><i class="fa fa-trash-o"></i> delete account</a>
+                    <br>
+                    <br> <a href="#" class="btn btn-small btn-primary"><i class="fa fa-twitter"></i> Whoat! Twitter Button</a>
+                    <br>
+                    <br> </div>
             </div>
         </div>
     </div>
