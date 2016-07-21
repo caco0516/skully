@@ -648,6 +648,18 @@ form {
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+span.badget{
+    background-color: #E94C5C;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0px 9px 0px 8px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+
 hr {
     margin-top: 3rem;
     margin-bottom: 3.5rem;
