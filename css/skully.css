@@ -551,6 +551,25 @@ input[type="button"].btn-warning:focus{
     border-bottom: 2px solid #bf922a;
 }
 
+.btn-small{
+    font-size: 1.2rem !important;
+    line-height: 1.2rem !important;
+}
+
+.btn-medium{
+    font-size: 1.8rem !important;
+    line-height: 1.8rem !important;
+}
+
+.btn-large{
+    font-size: 2.5rem !important;
+    line-height: 2.5rem !important;
+}
+
+.btn-xtra-large{
+    font-size: 3rem !important;
+    line-height: 3rem !important;
+}
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
