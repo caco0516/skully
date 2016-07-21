@@ -442,6 +442,10 @@ ul.nav-list > li.nav-list-item {
     text-transform: lowercase;
 }
 
+ul.nav-list > li.nav-list-item:hover {
+    background-color: #2d3b43;
+}
+
 ul.nav-list > li.nav-list-item.event {
     font-weight: 400;
     color: #fff;
