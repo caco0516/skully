@@ -48,6 +48,8 @@
 
 - btn-background color: #ebebeb;
 - btn-success-background-color : #2AB27B;
+- btn-primary-background-color : #3AA3E3;
+- btn-danger-background-color : #EB4D5C;
 
 */
 
@@ -467,6 +469,7 @@ input[type="reset"].btn-success,
 input[type="button"].btn-success {
     background-color: #2AB27B;
     color: #fff;
+    border: 2px solid transparent;
 }
 
 .btn.btn-success:hover,
@@ -477,6 +480,48 @@ input[type="button"].btn-success:hover {
     background-color: #2AB27B;
     color: #fff;
     border-bottom: 2px solid #249165;
+}
+
+/* BTN PRIMARY */
+
+.btn.btn-primary,
+button.btn-primary,
+input[type="submit"].btn-primary,
+input[type="reset"].btn-primary,
+input[type="button"].btn-primary {
+    background-color: #3AA3E3;
+    color: #fff;
+    border: 2px solid transparent;
+}
+
+.btn.btn-primary:hover,
+button.btn-primary:hover,
+input[type="submit"].btn-primary:hover,
+input[type="reset"].btn-primary:hover,
+input[type="button"].btn-primary:hover {
+    color: #fff;
+    border-bottom: 2px solid #2c7bac;
+}
+
+/* BTN DANGER */
+
+.btn.btn-danger,
+button.btn-danger,
+input[type="submit"].btn-danger,
+input[type="reset"].btn-danger,
+input[type="button"].btn-danger {
+    background-color: #EB4D5C;
+    color: #fff;
+    border: 2px solid transparent;
+}
+
+.btn.btn-danger:hover,
+button.btn-danger:hover,
+input[type="submit"].btn-danger:hover,
+input[type="reset"].btn-danger:hover,
+input[type="button"].btn-danger:hover {
+    color: #fff;
+    border-bottom: 2px solid #b73c47;
 }
 
 /* Forms
