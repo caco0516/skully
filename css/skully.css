@@ -435,7 +435,15 @@ input[type="button"]:focus {
 
 .btn-outline{
     border: 1px solid #bbb !important;
-    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.btn-outline:hover{
+        background-color: transparent !important;
+}
+
+.btn-outline:focus{
+        background-color: transparent !important;
 }
 
 
