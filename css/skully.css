@@ -280,9 +280,10 @@ p {
     margin-top: 0;
 }
 
-.secondary-text{
+.secondary-text {
     color: rgba(255, 255, 255, 0.19);
 }
+
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -295,18 +296,19 @@ a:hover {
     color: #138eb4;
 }
 
-a:visited{
+a:visited {
     color: #d66f24;
 }
+
 
 /* Side Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.side-nav-content{
+.side-nav-content {
     margin-left: 18%;
 }
 
-nav.side-nav{
+nav.side-nav {
     position: absolute;
     left: 0;
     width: 18%;
@@ -314,24 +316,24 @@ nav.side-nav{
     background-color: #243138;
 }
 
-nav.side-nav > h1{
+nav.side-nav > h1 {
     height: 56px;
     line-height: 56px;
     padding: 0px 15px 0px 15px;
-    color:  #ffffff;
+    color: #ffffff;
     font-size: 2.5rem;
     letter-spacing: 0.01rem;
     margin: 0;
 }
 
-ul.nav-list{
+ul.nav-list {
     box-sizing: border-box;
     list-style-type: none;
     margin: 0;
     color: rgba(255, 255, 255, 0.42);
 }
 
-ul.nav-list > li.nav-list-section{
+ul.nav-list > li.nav-list-section {
     text-transform: uppercase;
     font-size: 1.3rem;
     font-weight: 400;
@@ -339,18 +341,18 @@ ul.nav-list > li.nav-list-section{
     margin: 10px 15px 0px 15px;
 }
 
-ul.nav-list > li.nav-list-item{
+ul.nav-list > li.nav-list-item {
     font-weight: 400;
     margin: 0;
     text-transform: lowercase;
 }
 
-ul.nav-list > li.nav-list-item.event{
+ul.nav-list > li.nav-list-item.event {
     font-weight: 400;
     color: #fff;
 }
 
-ul.nav-list > li.nav-list-item.active{
+ul.nav-list > li.nav-list-item.active {
     font-weight: 400;
     margin: 0;
     color: #fff;
@@ -359,14 +361,13 @@ ul.nav-list > li.nav-list-item.active{
     border-radius: 0px 5px 5px 0px;
 }
 
-
-ul.nav-list a{
+ul.nav-list a {
     text-decoration: none;
     color: inherit;
     margin: 10px 15px 10px 15px;
 }
 
-ul.nav-list a::before{
+ul.nav-list a::before {
     content: "# "
 }
 
@@ -455,10 +456,13 @@ select {
     padding: 6px 10px;
     /* The 6px vertically centers text on FF, ignored by Webkit */
     background-color: #fff;
-    border: 1px solid #D1D1D1;
+    border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     box-shadow: none;
     box-sizing: border-box;
+    margin: 0;
+    font-size: 1.7rem;
+    width: 100%;
 }
 
 
@@ -483,6 +487,19 @@ textarea {
     padding-bottom: 6px;
 }
 
+input[type="email"]:hover,
+input[type="number"]:hover,
+input[type="search"]:hover,
+input[type="text"]:hover,
+input[type="tel"]:hover,
+input[type="url"]:hover,
+input[type="password"]:hover,
+textarea:hover,
+select:hover {
+    border: 1px solid #0076ff;
+    outline: 0;
+}
+
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -492,8 +509,22 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-    border: 1px solid #33C3F0;
+    border: 1px solid #0076ff;
+    box-shadow: 0 0 1px 2px rgba(0, 118, 255, 0.22);
     outline: 0;
+}
+
+input[type="email"]:disabled,
+input[type="number"]:disabled,
+input[type="search"]:disabled,
+input[type="text"]:disabled,
+input[type="tel"]:disabled,
+input[type="url"]:disabled,
+input[type="password"]:disabled,
+textarea:disabled,
+select:disabled {
+    background-color: rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 label,
@@ -501,6 +532,11 @@ legend {
     display: block;
     margin-bottom: .5rem;
     font-weight: 600;
+}
+
+label.help {
+    margin-top: 0px;
+    color: rgba(0, 0, 0, 0.42) !important;
 }
 
 fieldset {
@@ -517,6 +553,16 @@ label > .label-body {
     display: inline-block;
     margin-left: .5rem;
     font-weight: normal;
+}
+
+.error {
+    border: 1px solid rgb(235, 33, 33) !important;
+}
+
+.error:focus {
+    border: 1px solid rgb(235, 33, 33) !important;
+    box-shadow: 0 0 1px 2px rgba(235, 33, 33, 0.22) !important;
+    outline: 0;
 }
 
 
@@ -644,7 +690,7 @@ form {
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-span.badget{
+span.badget {
     background-color: #E94C5C;
     color: #fff;
     box-sizing: border-box;
@@ -654,7 +700,6 @@ span.badget{
     margin: 0px;
     margin-left: 10px;
 }
-
 
 hr {
     margin-top: 3rem;
