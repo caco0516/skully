@@ -32,6 +32,8 @@
 /* Kind of Variables :P
 -------------------------------------------------
 
+- default border-radius : 4px;
+
 - text color : #414141; 
 - secondary text color : rgba(255, 255, 255, 0.19);
 - action-blue: #19aad8;
@@ -224,7 +226,7 @@ body {
     line-height: 1.6;
     font-weight: 400;
     font-family: "Lato", sans-serif;
-    color: #414141;
+    color: #555459;
 }
 
 
@@ -310,6 +312,73 @@ p {
     color: rgba(255, 255, 255, 0.19);
 }
 
+/* Notifications
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+div.notification{
+    display: table;
+    border: 1px solid #bbb;
+    border-radius: 0px 4px 4px 0px;
+    box-sizing: border-box;
+    padding: 10px 15px 10px 15px;
+    border-left: 6px solid #bbb;
+    font-weight: 400;
+    font-size: 1.8rem;
+    min-width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+
+div.notification * {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.notification > .notification-icon{
+    display: table-cell;
+    width: 40px;
+    text-align: center;
+    line-height: 1.5;
+    color: #bbb;
+}
+
+div.notification > .content{
+    display: table-cell;
+    word-wrap: break-word;
+    word-break: keep-all;
+    line-height: 1.5;
+}
+
+div.notification.notification-primary{
+    border-left: 6px solid #3AA3E3;
+}
+
+div.notification.notification-primary .notification-icon{
+    color: #3AA3E3;
+}
+
+div.notification.notification-success{
+    border-left: 6px solid #2AB27B;
+}
+
+div.notification.notification-success .notification-icon{
+    color: #2AB27B;
+}
+
+div.notification.notification-warning{
+    border-left: 6px solid #EDB431;
+}
+
+div.notification.notification-warning .notification-icon{
+    color: #EDB431;
+}
+
+div.notification.notification-danger{
+    border-left: 6px solid #EB4D5C;
+}
+
+div.notification.notification-danger .notification-icon{
+    color: #EB4D5C;
+}
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
