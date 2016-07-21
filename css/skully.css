@@ -46,7 +46,8 @@
 
 - border color: rgba(0, 0, 0, 0.25);
 
--btn-background color: #ebebeb;
+- btn-background color: #ebebeb;
+- btn-success-background-color : #2AB27B;
 
 */
 
@@ -433,19 +434,50 @@ input[type="button"]:focus {
     outline: 0;
 }
 
-.btn-outline{
-    border: 1px solid #bbb !important;
-    background-color: rgba(0, 0, 0, 0.05) !important;
+/*BTN OUTLINE*/
+
+.btn.btn-outline,
+button.btn-outline,
+input[type="submit"].btn-outline,
+input[type="reset"].btn-outline,
+input[type="button"].btn-outline {
+    border: 1px solid #bbb;
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
-.btn-outline:hover{
-        background-color: transparent !important;
+.btn.btn-outline:hover,
+button.btn-outline:hover,
+input[type="submit"].btn-outline:hover,
+input[type="reset"].btn-outline:hover,
+input[type="button"].btn-outline:hover,
+.btn.btn-outline:focus,
+button.btn-outline:focus,
+input[type="submit"].btn-outline:focus,
+input[type="reset"].btn-outline:focus,
+input[type="button"].btn-outline:focus{
+    background-color: rgba(0, 0, 0, 0.00);
 }
 
-.btn-outline:focus{
-        background-color: transparent !important;
+/* BTN SUCCESS*/
+
+.btn.btn-success,
+button.btn-success,
+input[type="submit"].btn-success,
+input[type="reset"].btn-success,
+input[type="button"].btn-success {
+    background-color: #2AB27B;
+    color: #fff;
 }
 
+.btn.btn-success:hover,
+button.btn-success:hover,
+input[type="submit"].btn-success:hover,
+input[type="reset"].btn-success:hover,
+input[type="button"].btn-success:hover {
+    background-color: #2AB27B;
+    color: #fff;
+    border-bottom: 2px solid #249165;
+}
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
