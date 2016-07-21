@@ -21,7 +21,13 @@
     <title>Skully</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/skully.css" rel="stylesheet"> </head>
+    <link href="css/skully.css" rel="stylesheet">
+    <style>
+        div.section {
+            margin-bottom: 80px;
+        }
+    </style>
+</head>
 
 <body>
     <!-- Insert your HTML here -->
@@ -40,19 +46,83 @@
     </nav>
     <div class="side-nav-content">
         <div class="container">
-            <h1>Heading H1</h1>
-            <h2>Heading H2</h2>
-            <h3>Heading H3</h3>
-            <h4>Heading H4</h4>
-            <h5>Heading H5</h5>
-            <h6>Heading H6</h6>
-            <div>
-                <p>This is regular text and <strong>this is strong</strong> <span class="secondary-text">, but this is secondary text.</span></p>
+            <h1>Skully</h1>
+            <p>This library was inspired on Slack UI , for a better experience is recommended to use <strong>Lato</strong> as default font-family.</p>
+            <!-- TYOGRAFY -->
+            <div class="section">
+                <h2>Typografy</h2>
+                <div>
+                    <h1>Heading H1</h1>
+                    <h2>Heading H2</h2>
+                    <h3>Heading H3</h3>
+                    <h4>Heading H4</h4>
+                    <h5>Heading H5</h5>
+                    <h6>Heading H6</h6>
+                    <div>
+                        <p>This is regular text and <strong>this is strong</strong> <span class="secondary-text">, but this is secondary text.</span></p>
+                    </div>
+                    <div><a href="#">This is a link</a></div>
+                </div>
             </div>
-            <div><a href="#">This is a link</a></div>
-            <div><a href="#">This is a link</a></div>
+            <!-- FORMS -->
+            <div class="section">
+                <h2>Forms</h2>
+                <p>Here you can find simple example of how a form should be created using Skully</p>
+                <div>
+                    <form>
+                        <fieldset>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" placeholder="Name" />
+                            <label class="help">This is a normal input element , and Im a label with .help class</label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="lastname">Last Name</label>
+                            <input class="error" type="text" name="lastname" placeholder="Last Name" />
+                            <label class="help">This input is using .error class</label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="lastname">Phone</label>
+                            <input type="text" name="phone" placeholder="+506 7777 7777" disabled />
+                            <label class="help">This is a disabled input , poor it can recieve information</label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="gender">Gender</label>
+                            <select name="gender">
+                                <option>Please select a genre</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <label for="occupation">Occupation</label>
+                            <textarea name="occupation"></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <input type="checkbox" name="usethis"> Would you like to use this little framework ? </fieldset>
+                        <fieldset>
+                            <label>What's your opinion about this ?</label>
+                            <input type="radio" name="opinion"> Love it
+                            <br>
+                            <input type="radio" name="opinion"> Not bad
+                            <br>
+                            <input type="radio" name="opinion"> Well , there're worst frameworks
+                            <br>
+                            <input type="radio" name="opinion"> mmm , Don't know how to say it ...
+                            <br> </fieldset>
+                        <fieldset>
+                            <label>Please upload a file , just for fun ;-)</label>
+                            <input type="file" name="cv"> </fieldset>
+                    </form>
+                </div>
+            </div>
+            <!-- BUTTONS -->
+            <div class="section">
+                <h2>Buttons</h2>
+                <p>By default Skully applies style to buttons and input buttons , however you can use it with other controls like <strong>a</strong> to make a button lik. Here you can find a basic usage of buttons styles.</p>
+            </div>
         </div>
     </div>
+    <a href="https://github.com/caco0516/skully"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
     <!-- Scripts -->
 </body>
 
