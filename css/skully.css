@@ -47,9 +47,10 @@
 - border color: rgba(0, 0, 0, 0.25);
 
 - btn-background color: #ebebeb;
-- btn-success-background-color : #2AB27B;
-- btn-primary-background-color : #3AA3E3;
-- btn-danger-background-color : #EB4D5C;
+- success color: #2AB27B;
+- primary color : #3AA3E3;
+- danger color : #EB4D5C;
+- warning color : #EDB431;
 
 */
 
@@ -522,6 +523,32 @@ input[type="reset"].btn-danger:hover,
 input[type="button"].btn-danger:hover {
     color: #fff;
     border-bottom: 2px solid #b73c47;
+}
+
+/* BTN DANGER */
+
+.btn.btn-warning,
+button.btn-warning,
+input[type="submit"].btn-warning,
+input[type="reset"].btn-warning,
+input[type="button"].btn-warning {
+    background-color: #EDB431;
+    color: #fff;
+    border: 2px solid transparent;
+}
+
+.btn.btn-warning:hover,
+button.btn-warning:hover,
+input[type="submit"].btn-warning:hover,
+input[type="reset"].btn-warning:hover,
+input[type="button"].btn-warning:hover,
+.btn.btn-warning:focus,
+button.btn-warning:focus,
+input[type="submit"].btn-warning:focus,
+input[type="reset"].btn-warning:focus,
+input[type="button"].btn-warning:focus{
+    color: #fff;
+    border-bottom: 2px solid #bf922a;
 }
 
 /* Forms
