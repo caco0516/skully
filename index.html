@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -25,35 +25,67 @@
     <!-- FONT AWESOME -->
     <link href="css/font-awesome.css" rel="stylesheet">
     <style>
+
+        body{
+            padding-top: 8px;
+        }
+
         div.section {
             margin-bottom: 80px;
+        }
+
+        div.decoration-container {
+            position: fixed;
+            display: flex;
+            -ms-flex-flow: nowrap row;
+            -webkit-flex-flow: nowrap row;
+            flex-flow: nowrap row;
+            top: 0;
+            width: 100%;
+            height: 8px;
+            z-index:  999999999;
+        }
+
+        div.decoration-item-red{
+            background-color: #EB4D5C;
+            flex-grow: 1;
+        }
+
+        div.decoration-item-green{
+            background-color: #2AB27B;
+            flex-grow: 1;
+        }
+
+        div.decoration-item-blue{
+            background-color: #3AA3E3;
+            flex-grow: 1;
+        }
+
+        div.decoration-item-yellow{
+            background-color: #EDB431;
+            flex-grow: 1;
         }
     </style>
 </head>
 
 <body>
-    <!-- Insert your HTML here -->
+    <div class="decoration-container">
+        <div class="decoration-item-red"></div>
+        <div class="decoration-item-blue"></div>
+        <div class="decoration-item-green"></div>
+        <div class="decoration-item-yellow"></div>
+    </div>
     <nav class="side-nav">
         <h1>Skully</h1>
         <ul class="nav-list">
             <li class="nav-list-section">Documentation</li>
             <li class="nav-list-item"><a href="#typo">Grid System</a></li>
-            <li class="nav-list-item"><a href="#buttons">Container</a></li>
             <li class="nav-list-item"><a href="#typo">Typography</a></li>
+            <li class="nav-list-item"><a href="#buttons">Container</a></li>
             <li class="nav-list-item"><a href="#forms">Forms</a></li>
             <li class="nav-list-item"><a href="#buttons">Buttons</a></li>
             <li class="nav-list-item"><a href="#buttons">Table</a></li>
             <li class="nav-list-item"><a href="#buttons">Misc</a></li>
-        </ul>
-        <ul class="nav-list">
-            <li class="nav-list-section">channels <span class="secondary-text">(3)</span></li>
-            <li class="nav-list-item"><a href="#">api</a></li>
-            <li class="nav-list-item active"><a href="#">chat</a></li>
-            <li class="nav-list-item"><a href="#">general <span class="badget">1</span></a></li>
-            <li class="nav-list-section">channels</li>
-            <li class="nav-list-item"><a href="#">api</a></li>
-            <li class="nav-list-item active"><a href="#">chat</a></li>
-            <li class="nav-list-item"><a href="#">general</a></li>
         </ul>
     </nav>
     <div class="side-nav-content">
@@ -74,11 +106,39 @@
                         <p>This is regular text and <strong>this is strong</strong> <span class="secondary-text">, but this is secondary text.</span></p>
                     </div>
                     <div><a href="#">This is a link</a></div>
+                </div>
+                <div id="containers">
+                    <h2>Containers</h2>
+                    <div>
+                        <p>
+                            <strong>.panel</strong> is used to add a border or container style to a element, you can use everywhere for example on divs , forms and tables.
+                            .panel class won't add margin to yours element it must to be handle by yourself
+                        </p>
+                        <div class="panel">
+                            This is a simple panel
+                        </div>
+                        <br />
+                        <div class="panel">
+                            <label for="insidepanel">Input inside panel</label><input type="text" name="insidepanel" />
+                        </div>
+                        <br />
+                        <div class="panel">
+                            <div class="notification">
+                                <div class="notification-icon"> <span class="fa fa-user fa-lg notification-icon"></span> </div>
+                                <div class="content">
+                                    <p> This is a notification inside a panel</p><br />
+                                    <a class="btn btn-success btn-small">Notification Action</a>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                    </div>
                     <!-- NOTIFICATIONS-->
                     <div class="notification">
                         <div class="notification-icon"> <span class="fa fa-user fa-lg notification-icon"></span> </div>
-                        <div class="content"> <p> This is a notification, as you can see it's very easy to use ,if you want to show a lot of information in here, and you can add action buttons just right here</p><br>
-                        <a class="btn btn-success btn-small">Notification Action</a>
+                        <div class="content">
+                            <p> This is a notification, as you can see it's very easy to use ,if you want to show a lot of information in here, and you can add action buttons just right here</p><br>
+                            <a class="btn btn-success btn-small">Notification Action</a>
                             <a class="btn btn-danger btn-small">Another Action</a>
                         </div>
                     </div>
@@ -134,7 +194,8 @@
                             <textarea name="occupation"></textarea>
                         </fieldset>
                         <fieldset>
-                            <input type="checkbox" name="usethis"> Would you like to use this little framework ? </fieldset>
+                            <input type="checkbox" name="usethis"> Would you like to use this little framework ?
+                        </fieldset>
                         <fieldset>
                             <label>What's your opinion about this ?</label>
                             <input type="radio" name="opinion"> Love it
@@ -144,10 +205,12 @@
                             <input type="radio" name="opinion"> Well , there're worst frameworks
                             <br>
                             <input type="radio" name="opinion"> mmm , Don't know how to say it ...
-                            <br> </fieldset>
+                            <br>
+                        </fieldset>
                         <fieldset>
                             <label>Please upload a file , just for fun ;-)</label>
-                            <input type="file" name="cv"> </fieldset>
+                            <input type="file" name="cv">
+                        </fieldset>
                     </form>
                 </div>
             </div>
@@ -182,7 +245,76 @@
                     <br>
                     <br> <a href="#" class="btn btn-small btn-primary"><i class="fa fa-twitter"></i> Whoat! Twitter Button</a>
                     <br>
-                    <br> </div>
+                    <br>
+                </div>
+            </div>
+            <!-- TABLE -->
+            <div id="tables">
+                <h2>Tables</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Carlos Castillo</td>
+                            <td>co.carlos@outlook.com</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MichaelJordan</td>
+                            <td>mjordan@airjordan.com</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Nikola Tesla</td>
+                            <td>tesla.niko@teslacars.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p> This is a <strong>.striped</strong> table</p>
+                <table class="striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Maria Gonzales</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Tim Magin</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Sara Conner</td>
+                            <td>78</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- MISC -->
+            <div id="misc" class="section">
+                <h2>Misc</h2>
+                <p>This is a simple usage of breadcrumbs</p>
+                <ul class="breadcrumbs">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Statistics</a></li>
+                </ul>
             </div>
         </div>
     </div>

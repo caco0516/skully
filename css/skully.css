@@ -866,7 +866,7 @@ td:last-child {
     padding-right: 0;
 }
 
-table.alternated tbody tr:nth-child(odd) {
+table.striped tbody tr:nth-child(odd) {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -924,15 +924,47 @@ form {
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-span.badget {
-    background-color: #E94C5C;
-    color: #fff;
-    box-sizing: border-box;
-    padding: 0px 9px 0px 8px;
-    border-radius: 10px;
-    text-align: center;
-    margin: 0px;
+ul.breadcrumbs {
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.15);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding: 10px 15px 10px 15px;
+}
+
+ul.breadcrumbs li{
+    display: inline;
+    color: #555459;
+}
+
+ul.breadcrumbs li::after{
+    content:'>';
+    display: inline;
+    color: #555459;
+    margin-right: 10px;
     margin-left: 10px;
+}
+
+ul.breadcrumbs li:nth-last-child(1)::after{
+    content: '';
+    margin-right: 0px;
+}
+
+ul.breadcrumbs li:nth-last-child(1){
+    margin-right:0px;
+}
+
+ul.breadcrumbs li a{
+    text-decoration:none;
+    color: inherit;
+    font-weight: 900;
+}
+
+ul.breadcrumbs li a:hover{
+    text-decoration:none;
+    color: #2AB27B;
+    font-weight: 900;
 }
 
 hr {
