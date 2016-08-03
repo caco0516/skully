@@ -842,12 +842,18 @@ pre > code {
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+table{
+    width: 100%;
+}
+
+th{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
 
 th,
 td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #E1E1E1;
 }
 
 th:first-child,
@@ -858,6 +864,10 @@ td:first-child {
 th:last-child,
 td:last-child {
     padding-right: 0;
+}
+
+table.alternated tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 
