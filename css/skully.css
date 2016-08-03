@@ -794,7 +794,7 @@ label > .label-body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 ul {
-    list-style: circle inside;
+    list-style: disc inside;
 }
 
 ol {
