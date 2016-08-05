@@ -2,13 +2,20 @@
 A light weight library inspired on Slack UI and based on [Skeleton](http://getskeleton.com/). This main porpouse of this is to have a base for any project and avoid to start a new one from scratch.
 This was made for community so feel free to improve it and share it with all of us.
 
-[Here](https://caco0516.github.io/skully/) you can find documents about how to use Skully 
+[Here](https://caco0516.github.io/skully/) you can find documentation about how to use Skully 
 
 So hope you like it !!! :)
 
 ##Installation
 
-You can get latest version of in [here](https://github.com/caco0516/skully/releases)
+You can get latest version in [here](https://github.com/caco0516/skully/releases)
+
+###Via npm
+
+```
+    npm install skully
+
+```
 
 ##License
 
